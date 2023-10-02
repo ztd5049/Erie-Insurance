@@ -5,24 +5,116 @@
   height: auto;
 }
 
+
+/*Definition section*/
+
+.definition-container-blue{
+  background-color: #e5f0f8;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.definition-container{
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.definition-icon{
+  margin: auto;
+}
+
+.definition-desc-left{
+  text-align: left;
+  width: 70%;
+  margin-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  max-width: 1000px;
+}
+
+.definition-desc-right{
+  text-align: right;
+  width: 70%;
+  margin-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  max-width: 1000px;
+}
+
+.definition-para{
+  padding-top: 20px;
+}
+
+.definition-para p{
+  font-size: x-large
+}
+
+@media (max-width: 768px) {
+  .definition-container{
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .definition-container-blue{
+    background-color: #e5f0f8;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+  }
+
+  .definition-desc-left{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .definition-desc-right{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .definition-icon{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+
+/*persona section*/
+
 .persona-container-wide{
-  background-color: red;
   height: auto;
   margin: 30px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 70px;
 }
 
 .persona-item{
   height: 90%;
   width: 30%;
-  background-color: #028a25;
   margin: auto;
   flex-direction: column;
 }
 
 .persona-icon{
-  background-color: purple;
   justify-content: center;
   display: block;
   width: 80%;
@@ -33,22 +125,19 @@
 
 .persona-header{
   text-align: center;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 .persona-desc{
   text-align: center;
 }
 
-
-
-
-
-/*Mobile Styling Section*/
+.persona-desc p{
+  padding-bottom: 80px;
+}
 
 @media (max-width: 768px) {
   .persona-container-wide{
-    background-color: red;
     height: auto;
     margin: 30px;
     display: flex;
@@ -59,14 +148,43 @@
   .persona-item{
     height: 90%;
     width:80%;
-    background-color: #028a25;
     margin: auto;
     flex-direction: column;
   }
 }
 
 
+/*FAQ section*/
+.faq-container{
+  background-color: #00304d;
+  height: auto;
+  margin: auto;
+}
 
+.faq-header{
+  margin: 30px;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 30px;
+  max-width: 1300px;
+}
+
+.faq-para{
+  color: #fff;
+  padding-left: 40px;
+  margin-left: 30PX;
+  margin-right: 30px;
+  padding-bottom: 40px;
+  max-width: 1300px;
+}
+
+.faq-para h3{
+  padding-bottom: 30px;
+}
+
+.faq-list{
+  margin-left: 30px;
+}
 
 
 /*Full Original css File*/
